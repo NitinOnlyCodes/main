@@ -7,3 +7,17 @@ even_words = [w for w in words if (len(w)%2==0)]
 result = " ".join(even_words)
 
 print(result)
+
+#Using generator expression with map
+
+a = "geeks for geeks"
+
+words = a.split()
+
+even_words = [w for w in words if (len(w)%2==0)]
+
+even_wrd_str = map(str, even_words)
+
+res = " ".join(even_wrd_str)
+
+print(res)
